@@ -1,109 +1,147 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vers Design — Дизайн</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0e0e12;
+      font-family: Arial, sans-serif;
+      background-color: #111014;
       color: white;
     }
+
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 40px;
-      background-color: #131318;
+      padding: 20px 60px;
+      background-color: #111014;
     }
-    .logo {
-      height: 40px;
+
+    header img {
+      height: 30px;
     }
+
     nav a {
       color: white;
-      margin-left: 20px;
+      margin-left: 30px;
       text-decoration: none;
-      font-weight: 500;
+      font-weight: bold;
     }
-    .hero {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+
+    section {
+      padding: 60px 20px;
       text-align: center;
-      padding: 100px 20px;
     }
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
+
+    h1, h2 {
+      color: white;
     }
-    .hero p {
-      font-size: 1.2rem;
-      color: #ccc;
-      max-width: 600px;
-    }
-    .btn {
+
+    .button {
+      display: inline-block;
       margin-top: 30px;
       padding: 15px 30px;
-      background-color: #6c3df4;
-      border: none;
-      border-radius: 8px;
+      background-color: #8a50ff;
       color: white;
-      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
       cursor: pointer;
+      text-decoration: none;
     }
-    .btn:hover {
-      background-color: #5a2ed6;
+
+    .example-text {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #aaa;
     }
-    footer {
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+
+    .footer {
+      background-color: #1b1a1f;
+      padding: 40px 20px;
       text-align: center;
-      padding: 30px;
-      color: #777;
     }
-    .contact {
-      text-align: center;
-      padding: 50px 20px;
-      background-color: #1a1a22;
+
+    .footer a {
+      color: #8a50ff;
+      text-decoration: none;
     }
-    .contact h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-    .contact p {
-      font-size: 1.1rem;
-      margin: 5px 0;
+
+    .copyright {
+      margin-top: 40px;
+      font-size: 13px;
+      color: #555;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="c2d3b500-0655-4c93-8951-2335dc8f862c.png" alt="Vers Design Logo" class="logo">
+    <div style="color:white; font-weight:bold;">Vers Design</div>
     <nav>
-      <a href="#services">Услуги</a>
-      <a href="#portfolio">Портфолио</a>
+      <a href="#home">Главная</a>
+      <a href="#advantages">Наши преимущества</a>
       <a href="#contact">Контакты</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Vers Design — Дизайн, который вдохновляет</h1>
-    <p>Мы создаем уникальные визуальные решения для вашего бренда. Дизайн, который выделяется и продаёт.</p>
-    <button class="btn">Заказать дизайн</button>
+  <!-- Главная -->
+  <section id="home">
+    <h1>Наши паки</h1>
+    <div class="gallery">
+      <img src="images/pic1.png" alt="Pack 1">
+      <img src="images/pic2.png" alt="Pack 2">
+      <img src="images/pic3.png" alt="Pack 3">
+      <img src="images/pic4.png" alt="Pack 4">
+      <img src="images/pic5.png" alt="Pack 5">
+      <img src="images/pic6.png" alt="Pack 6">
+    </div>
   </section>
 
-  <section class="contact" id="contact">
+  <!-- Преимущества -->
+  <section id="advantages">
+    <h2>Наши преимущества</h2>
+    <p>1. <b>Быстрота</b> — Мы являемся быстрыми дизайнерами</p>
+    <p>2. У нас куча отзывов</p>
+    <p>3. Готовы подлететь</p>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contact">
+    <h2>Заказать дизайн</h2>
+    <p>Мы создаем уникальные визуальные решения.</p>
+    <a class="button" href="mailto:maximmorozovru768@gmail.com?subject=Заказ%20дизайна&body=Здравствуйте,%20я%20хочу%20заказать%20дизайн%20в%20телеграмм%20(или%20куда-то%20ещё)%0Aмой%20телефон:%20+7%20000%20000%200000">Заказать дизайн</a>
+    <div class="example-text">
+      Пример письма: Здравствуйте, я хочу заказать дизайн в телеграмм (или куда-то ещё).<br>
+      Мой телефон: +7 000 000 0000
+    </div>
+  </section>
+
+  <footer class="footer">
     <h2>Контакты</h2>
     <p>Наша группа продаёт посты для телеграмма!</p>
-    <p>Телеграм: <a href="https://t.me/necrucken" style="color:#6c3df4">@necrucken</a></p>
+    <p>Телеграм: <a href="https://t.me/necrucken" target="_blank">@necrucken</a></p>
     <p>Цена по обговору по телефону:</p>
-    <p>Телефон / WhatsApp: <a href="tel:+79826880636" style="color:#6c3df4">+7 982 688 0636</a></p>
-  </section>
-
-  <footer>
-    &copy; 2025 Vers Design. Все права защищены.
+    <p>Телефон / WhatsApp: <a href="tel:+79826880636">+7 982 688 0636</a></p>
+    <div class="copyright">
+      © 2025 Vers Design. Все права защищены.
+    </div>
   </footer>
-  <a href="mailto:maximmorozovru768@gmail.com?subject=Заказ дизайна&body=Здравствуйте, я хочу заказать дизайн в телеграмм (или куда-то ещё). Мой телефон: +7 000 000 0000" class="btn">Заказать дизайн</a>
-
 </body>
 </html>
